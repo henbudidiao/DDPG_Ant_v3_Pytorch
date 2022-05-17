@@ -10,4 +10,6 @@ play OpenAI Gym's Ant-v3 with deep deterministic policy gradient
 
 2.我感觉版本信息不重要，但还是给一下以供参考。我用的gym版本：0.20.0；我用的pytorch版本：1.10.0+cu113；我用的mujoco应用程序版本：150；我用的mujoco_py包版本：v1.50.1.0
 
-![Ant](https://user-images.githubusercontent.com/64433060/168765453-c92eba63-00c7-40d2-8aa3-b7828b8f9bdd.png)
+
+https://user-images.githubusercontent.com/64433060/168779230-ffd44236-1306-4cda-86e4-b2a9c7db1182.mp4
+
