@@ -11,5 +11,9 @@ First set the switch flag to 0, train first, and stop training directly after 20
 2.I don't think the version information is important, but I still give it for reference.
 * Gym version：0.20.0；pytorch version：1.10.0+cu113；mujoco version：150；mujoco_py version：v1.50.1.0;Finally,I used win10.
 
-![Ant](https://user-images.githubusercontent.com/64433060/168765453-c92eba63-00c7-40d2-8aa3-b7828b8f9bdd.png)
+
+
+https://user-images.githubusercontent.com/64433060/168779367-1be1bc87-3591-473e-830e-7b9bc9afba59.mp4
+
+
 
