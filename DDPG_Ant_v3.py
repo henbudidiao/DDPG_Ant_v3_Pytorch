@@ -45,9 +45,9 @@ state_number=env.observation_space.shape[0]
 action_number=env.action_space.shape[0]
 max_action = env.action_space.high[0]
 min_action = env.action_space.low[0]
-LR_A = 5e-5    # learning rate for actor
+LR_A = 1e-4    # learning rate for actor
 LR_C = 1e-4    # learning rate for critic
-GAMMA = 0.95
+GAMMA = 0.9
 # reward discount
 MemoryCapacity=10000
 Batch=128
