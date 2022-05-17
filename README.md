@@ -1,4 +1,4 @@
-README: English | [中文](https://github.com/henbudidiao/DDPG_Ant_v3_Pytorch/blob/main/README.md)
+README: [English](https://github.com/henbudidiao/DDPG_Ant_v3_Pytorch/blob/main/README_ENG.md) | [中文](https://github.com/henbudidiao/DDPG_Ant_v3_Pytorch/blob/main/README.md)
 # DDPG_Ant_v3_Pytorch
 play OpenAI Gym's Ant-v3 with deep deterministic policy gradient
 * 想使用gym库直接调用Ant-v3游戏环境，你需要安装mujoco。mujoco还没安装的话，请看[***链接***](https://zhuanlan.zhihu.com/p/502112539)
