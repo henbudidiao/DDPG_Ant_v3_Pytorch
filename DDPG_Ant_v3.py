@@ -3,13 +3,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 import numpy as np
 import gym
-from torch.distributions import Categorical
-from matplotlib import pyplot as plt
-import os
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 env = gym.make('Ant-v3').unwrapped#Hopper-v3\HalfCheetah-v3\Ant-v3\Humanoid-v3
 '''Ant环境：状态有111个，前27个有值，包括蚂蚁身体不同部位的位置值，接着是这些单独部位的速度(它们的导数)
 ，后86=14*6个是施加到每个连杆质心的接触力，这14个环节是:地面环节、躯干环节、每条腿的3个环节(1 + 1 + 12)
@@ -232,9 +227,9 @@ if Switch==0:
         print('Episode {}，奖励：{}'.format(episode, reward_totle))
         if episode % 10 == 0 and episode > 100:#保存神经网络参数
             save_data = {'net': actor.actor_estimate_eval.state_dict(), 'opt': actor.optimizer.state_dict(), 'i': episode}
-            torch.save(save_data, "D:\PyCharm 2019.3\mytorch_spacework\demo\model_DDPG_actor_Ant_v3.pth")
+            torch.save(save_data, "E:\model_DDPG_actor_Ant_v3.pth")
             save_data = {'net': critic.critic_estimate_eval.state_dict(), 'opt': critic.optimizer.state_dict(), 'i': episode}
-            torch.save(save_data, "D:\PyCharm 2019.3\mytorch_spacework\demo\model_DDPG_critic_Ant_v3.pth")
+            torch.save(save_data, "E:\model_DDPG_critic_Ant_v3.pth")
     #     if reward_totle > 800: RENDER = True
     # env.close()
     '''测试'''
@@ -242,9 +237,9 @@ else:
     print('DDPG测试中...')
     aa=Actor()
     cc=Critic()
-    checkpoint_aa = torch.load("D:\PyCharm 2019.3\mytorch_spacework\demo\model_DDPG_actor_Ant_v3.pth")
+    checkpoint_aa = torch.load("E:\model_DDPG_actor_Ant_v3.pth")
     aa.actor_estimate_eval.load_state_dict(checkpoint_aa['net'])
-    checkpoint_cc = torch.load("D:\PyCharm 2019.3\mytorch_spacework\demo\model_DDPG_critic_Ant_v3.pth")
+    checkpoint_cc = torch.load("E:\model_DDPG_critic_Ant_v3.pth")
     cc.critic_estimate_eval.load_state_dict(checkpoint_cc['net'])
     for j in range(10):
         state = env.reset()
