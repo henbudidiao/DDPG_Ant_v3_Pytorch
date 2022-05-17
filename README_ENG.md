@@ -2,7 +2,7 @@ README: [English](https://github.com/henbudidiao/DDPG_Ant_v3_Pytorch/blob/main/R
 # DDPG_Ant_v3_Pytorch
 play OpenAI Gym's Ant-v3 with deep deterministic policy gradient
 * To use the gym library to directly call the ant-v3 game environment, you need to install mujoco firstly.If mujoco has not been installed, please see [***Link***](https://zhuanlan.zhihu.com/p/502112539)
-* The introduction of ant game environment is explained in detail in my code comments.The CPU is used, and the training takes 15-20min. During the test, it can only be said that the ant can run, but it is a Attack on Titan.（...Suddenly it became strange ）
+* The introduction of ant game environment is explained in detail in my code comments.The CPU is used, and the training takes 20-25min. During the test, it can only be said that the ant can run, but it looks like a baby titan.（...Suddenly it became strange ）
 ## Code usage：
 First set the switch flag to 0, train first, and stop training directly after 20-25min training (Don't wait for it all the time)，Because the parameters of the neural network have been saved in the model_DDPG_actor_Ant_v3.pth.Then, set the switch flag to 1, and you can see the effect of training.
 ## remark：
