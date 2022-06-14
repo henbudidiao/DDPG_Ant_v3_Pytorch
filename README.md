@@ -1,7 +1,7 @@
 README: [English](https://github.com/henbudidiao/DDPG_Ant_v3_Pytorch/blob/main/README_ENG.md) | [中文](https://github.com/henbudidiao/DDPG_Ant_v3_Pytorch/blob/main/README.md)
 # DDPG_Ant_v3_Pytorch
 ## 项目背景
-使用深度强化学习算法DDPG玩mujoco里的Ant-3游戏，让蚂蚁学会行走。play OpenAI Gym's Ant-v3 with deep deterministic policy gradient
+使用深度强化学习算法DDPG玩mujoco里的Ant-3游戏，让蚂蚁学会行走。
 ## 上手指南
 ### 安装一些环境
 * 想使用gym库直接调用Ant-v3游戏环境，你需要安装mujoco。mujoco还没安装的话，请看[***链接***](https://zhuanlan.zhihu.com/p/502112539)
