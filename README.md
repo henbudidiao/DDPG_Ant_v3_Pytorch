@@ -54,8 +54,3 @@ env.close()
 
 https://user-images.githubusercontent.com/64433060/168779230-ffd44236-1306-4cda-86e4-b2a9c7db1182.mp4
 
-
-
-
-https://github.com/henbudidiao/DDPG_Ant_v3_Pytorch/assets/64433060/48470578-16ce-470e-b126-ee5a6a98ff48
-
